@@ -1,0 +1,19 @@
+name = "cps-digital-diary"
+main = "src/worker.js"
+compatibility_date = "2026-11-17"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cps-diary-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[vars]
+APP_NAME = "CPS Digital Diary"
+COOKIE_NAME = "cps_session"
+SESSION_DAYS = "7"
